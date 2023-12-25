@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteTorrentClient", "RemoteTorrentClient\RemoteTorrentClient.csproj", "{F978992B-4B24-42D5-A861-1C16A24018B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F978992B-4B24-42D5-A861-1C16A24018B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F978992B-4B24-42D5-A861-1C16A24018B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F978992B-4B24-42D5-A861-1C16A24018B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F978992B-4B24-42D5-A861-1C16A24018B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B05CB81C-6A1F-485C-B6FF-4FC684B956FA}
+	EndGlobalSection
+EndGlobal
