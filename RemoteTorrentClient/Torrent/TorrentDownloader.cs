@@ -64,11 +64,20 @@ internal class TorrentDownloader
             // As EngineSettings.AutoSaveLoadDhtCache is enabled, any cached data will be loaded into the
             // Dht engine when the first torrent is started, enabling it to bootstrap more rapidly.
             await manager.StartAsync();
-            while(!manager.Complete)
+            List<TorrentState> states = new();
+            TorrentState state = TorrentState.Error;
+            while(true)
             {
-
+                if (manager.State != state)
+                {
+                    state = manager.State;
+                    states.Add(state);
+                    Console.WriteLine("STATE: "+state);
+                }
+                if (state == TorrentState.Seeding)
+                    break;
             }
-            throw new Exception();
+            await manager.StopAsync();
         }
     }
 }
